@@ -8,6 +8,6 @@
     </head>
     <body>
         <h2>Hello world!!</h2>
-        <a href="./html/customer_index.html"></a>
+        <a href="./html/customer_index.html">aaa</a>
     </body>
 </html>
