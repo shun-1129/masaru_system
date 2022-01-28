@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stockreset.css" />
+    <link rel="stylesheet" href="./css/addstock.css" />
+    <title>予約</title>
+  </head>
+  <body>
+    <header class="header"><h1>予約</h1></header>
+
+    <section class="wrap">
+      <div class="wrap-content">
+        <form action="./completeuser.html" method="get">
+          <label for="time">開始時間</label>
+          <input type="time" name="time" min="0" value="0" /><br />
+          <label for="number">利用時間</label>
+          <input
+            type="number"
+            name="number"
+            min="0"
+            max="24"
+            value="0"
+          />時間<br />
+          <label for="number">利用人数</label>
+          <input type="number" name="number" min="0" max="20" value="0" /><br />
+          <a href="./usertop.html">戻る</a>
+          <input type="submit" value="予約" name="submit" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

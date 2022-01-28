@@ -1,0 +1,28 @@
+main {
+  text-align: center;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main table {
+  margin: 0 auto;
+}
+
+main table tr td {
+  text-align: center;
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+}
+/*# sourceMappingURL=member_singup.css.map */

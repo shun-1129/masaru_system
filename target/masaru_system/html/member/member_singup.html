@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>member singup</title>
+        <link rel="stylesheet" href="../../css/member_singup.css" />
+        <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://ajaxzip3.github.io/ajaxzip3.js"
+            charset="UTF-8"
+        ></script>
+        <script src="../../js/member_singup.js" charset="UTF-8"></script>
+    </head>
+    <body>
+        <main>
+            <h2>会員登録</h2>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td>氏名 (性)</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="user_name1"
+                                id="user_name1"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>氏名 (名)</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="user_name2"
+                                id="user_name2"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>氏名 (セイ)</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="user_name3"
+                                id="user_name3"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>氏名 (メイ)</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="user_name4"
+                                id="user_name4"
+                            />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>メールアドレス</td>
+                        <td>
+                            <input
+                                type="email"
+                                name="mail_address1"
+                                id="mail_address1"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>メールアドレス確認</td>
+                        <td>
+                            <input
+                                type="email"
+                                name="mail_address2"
+                                id="mail_address2"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">メールアドレスが一致しません。</td>
+                    </tr>
+
+                    <tr>
+                        <td>パスワード</td>
+                        <td>
+                            <input type="password" name="pass1" id="pass1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>パスワード確認</td>
+                        <td>
+                            <input type="password" name="pass2" id="pass2" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">パスワードが一致しません。</td>
+                    </tr>
+
+                    <tr>
+                        <td>性別</td>
+                        <td>
+                            <select name="sex" id="sex">
+                                <option value="0" selected>男性</option>
+                                <option value="1">女性</option>
+                                <option value="2">その他</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>郵便番号(ハイフンなし)</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="郵便番号"
+                                onKeyUp="AjaxZip3.zip2addr(this,'','都道府県','市区町村','以降の住所');"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>都道府県</td>
+                        <td>
+                            <input type="text" name="都道府県" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>市区町村</td>
+                        <td>
+                            <input type="text" name="市区町村" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>町域</td>
+                        <td>
+                            <input type="text" name="以降の住所" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>以降</td>
+                        <td>
+                            <input
+                                type="text"
+                                name="Iko_address"
+                                id="Iko_address"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="reset" value="入力クリア" />
+                        </td>
+                        <td>
+                            <input type="submit" value="登録" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <a href="../member/member_singup_conf.html">確認画面</a>
+        </main>
+    </body>
+</html>
