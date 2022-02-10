@@ -1,0 +1,26 @@
+#call_tbl {
+  width: 800px;
+  margin: 20px auto;
+}
+
+.call_tbl {
+  width: 800px;
+  margin: 20px auto;
+}
+
+.call_tbl .Return_td {
+  width: 400px;
+  text-align: left;
+}
+
+.call_tbl .Return_td .Return_btn_class {
+  width: 150px;
+  height: 50px;
+  font-size: 1.4rem;
+}
+
+.call_tbl .Call_td {
+  width: 400px;
+  text-align: right;
+}
+/*# sourceMappingURL=Call_tbl.css.map */

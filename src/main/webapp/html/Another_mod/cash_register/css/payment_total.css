@@ -1,0 +1,25 @@
+.i{
+    margin-bottom: 10px;
+}
+
+
+.wrap-content p{
+    width: 400px;
+    margin: 10px auto 0 auto;
+    text-align: right;
+  
+  }
+
+
+.wrap-content form input{
+    transform: scale(1.5);
+    width: 20px;
+  }
+
+.wrap-content form{
+    width: 400px;
+    margin: 10px auto 0 auto;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+

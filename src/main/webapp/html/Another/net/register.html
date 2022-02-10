@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>仮会員登録</title>
+        <link
+            rel="stylesheet"
+            href="../../../css/member_reg_for_customer.css"
+        />
+        <link rel="stylesheet" href="../../../css/Call_tbl.css" />
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/jQuery_modal.js"></script>
+    </head>
+    <body>
+        <div id="fast_div">
+            <div class="parent">
+                <header>
+                    <h1>仮会員登録</h1>
+                </header>
+                <main>
+                    <table class="call_tbl">
+                        <tr>
+                            <td class="Return_td">
+                                <a href="./toppage.html">
+                                    <button
+                                        type="button"
+                                        class="Return_btn_class"
+                                    >
+                                        戻る
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <form action="./register2.html">
+                        <table id="member_reg_tbl">
+                            <tr>
+                                <td class="TAG">氏名(性)</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="name_0"
+                                        value="春"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">氏名(名)</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="name_1"
+                                        value="名古屋"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">氏名(セイ)</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="name_2"
+                                        value="ハル"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">氏名(メイ)</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="name_3"
+                                        value="ナゴヤ"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">メールアドレス</td>
+                                <td class="Contents">
+                                    <input
+                                        type="email"
+                                        name="mail_0"
+                                        value="sample@gmail.com"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">メールアドレス確認</td>
+                                <td class="Contents">
+                                    <input
+                                        type="email"
+                                        name="mail_1"
+                                        value="sample@gmail.com"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="error_email">
+                                    メールアドレスが一致しません
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">電話番号</td>
+                                <td class="Contents">
+                                    <input
+                                        type="tel"
+                                        name="TEL"
+                                        value="09012341234"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">パスワード</td>
+                                <td class="Contents">
+                                    <input
+                                        type="password"
+                                        name="pass0"
+                                        value="samplePASS"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">パスワード確認</td>
+                                <td class="Contents">
+                                    <input
+                                        type="password"
+                                        name="pass1"
+                                        value="samplePASS"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="error_pass">
+                                    メールアドレスが一致しません
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">性別</td>
+                                <td class="Contents">
+                                    <select name="SEX" id="SEX">
+                                        <option value="0">男性</option>
+                                        <option value="1">女性</option>
+                                        <option value="2">その他</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">生年月日</td>
+                                <td class="Contents">
+                                    <select name="Year" class="Birth_Day">
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">
+                                            2018
+                                        </option></select
+                                    >年
+                                    <select name="Month" class="Birth_Day">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option></select
+                                    >月
+                                    <select name="Day" class="Birth_Day">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option></select
+                                    >日
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">
+                                    郵便番号<br />(ハイフンなし)
+                                </td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="post"
+                                        value="4500002"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">都道府県</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="TODOFU"
+                                        value="愛知県"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">市区町村</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="SHIKU"
+                                        value="名古屋市中村区"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">町域</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="TYOU"
+                                        value="名駅"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="TAG">以降</td>
+                                <td class="Contents">
+                                    <input
+                                        type="text"
+                                        name="IKOU"
+                                        value="4-27-1"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                        <table id="TOTAL">
+                            <tr>
+                                <td>
+                                    <input type="reset" value="入力クリア" />
+                                </td>
+                                <td>
+                                    <input type="submit" value="登録確認" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </main>
+            </div>
+        </div>
+        <div id="modal005" class="modal js_modal">
+            <div class="modal__bg js_modal_close"></div>
+            <div class="modal__content">
+                <a href="#" class="js_modal_close">閉じる</a>
+                <p>ただいま店員がまいりますしばらくお待ちください。</p>
+            </div>
+        </div>
+        <footer>copyright&copy; All free creaters Ltd. 2021</footer>
+    </body>
+</html>

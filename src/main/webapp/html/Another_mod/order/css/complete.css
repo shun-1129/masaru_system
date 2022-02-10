@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  text-align: center;
+  height: 120px;
+  line-height: 120px;
+  background-color: #d6bcfa;
+}
+
+.wrap {
+  width: 100%;
+  height: calc(100vh - 120px);
+}
+.wrap-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+.wrap-content p {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.wrap-content a {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=complete.css.map */

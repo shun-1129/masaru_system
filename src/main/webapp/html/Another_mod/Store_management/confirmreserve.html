@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stockreset.css" />
+    <link rel="stylesheet" href="./css/confirm.css" />
+    <title>予約確認</title>
+  </head>
+  <body>
+    <header class="header"><h1>予約確認</h1></header>
+
+    <section class="wrap">
+      <div class="wrap-content">
+        <p>以下の内容で追加しますか？</p>
+        <form action="./reserve_complete.html" method="get">
+          <input type="hidden" name="namae" value="安井" />
+          <input type="hidden" name="tel" value="080999999999" />
+          <input type="hidden" name="date" value="2022/19/18" />
+          <input type="hidden" name="time" value="23:00" />
+          <input type="hidden" name="number" value="20" />
+          <ul>
+            <li>お名前：ココイチ</li>
+            <li>電話番号：8888888888888</li>
+            <li>日付：2022/19/18</li>
+            <li>時刻：23:00</li>
+            <li>利用時間：20時間</li>
+          </ul>
+          <a href="./reserve.html">戻る</a>
+          <input type="submit" value="追加する" name="submit" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+html #fast_div, body #fast_div {
+  text-align: center;
+  position: relative;
+}
+
+html #fast_div .parent, body #fast_div .parent {
+  width: 100%;
+}
+
+html #fast_div .parent #member_reg_tbl_conf, body #fast_div .parent #member_reg_tbl_conf {
+  width: 800px;
+  margin: 20px auto;
+}
+
+html #fast_div .parent #member_reg_tbl_conf .TAG, html #fast_div .parent #member_reg_tbl_conf .Contents, body #fast_div .parent #member_reg_tbl_conf .TAG, body #fast_div .parent #member_reg_tbl_conf .Contents {
+  width: 400px;
+  font-size: 1.4rem;
+}
+
+html #fast_div .parent #TOTAL, body #fast_div .parent #TOTAL {
+  width: 500px;
+  margin: 0 auto 50px auto;
+}
+
+html #fast_div .parent #TOTAL td, body #fast_div .parent #TOTAL td {
+  font-size: 1.4rem;
+  width: 250px;
+}
+
+html #fast_div .parent #TOTAL td button, body #fast_div .parent #TOTAL td button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.4rem;
+}
+
+html footer, body footer {
+  text-align: center;
+}
+/*# sourceMappingURL=member_reg_for_customer_conf.css.map */

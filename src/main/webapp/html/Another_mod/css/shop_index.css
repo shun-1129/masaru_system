@@ -1,0 +1,52 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+html header,
+html main,
+html footer,
+body header,
+body main,
+body footer {
+  text-align: center;
+}
+
+html main table,
+body main table {
+  margin: 0 auto;
+}
+
+html main table td,
+body main table td {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=shop_index.css.map */
+
+h2 {
+  display: inline-block;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table tr {
+  border: 1px solid black;
+}
+
+table tr td {
+  width: 150px;
+  border: 1px solid black;
+}
+
+a {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.3rem;
+}
