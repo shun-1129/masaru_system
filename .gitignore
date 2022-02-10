@@ -1,6 +1,6 @@
 .vscode/
 sql_file
+target
 src/main/java/Encryption_Decryption
 target/classes/Encryption_Decryption
 src/main/java/DATABASE/setting.java
-target/
