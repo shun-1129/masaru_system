@@ -3,4 +3,4 @@ sql_file
 src/main/java/Encryption_Decryption
 target/classes/Encryption_Decryption
 src/main/java/DATABASE/setting.java
-target/classes/DATABASE/setting.class
+target/
