@@ -8,12 +8,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class Access {
+    DATABASE.Setting SETTING = new DATABASE.Setting();
+    private ArrayList<HashMap<String, String>> list = SETTING.getDATA();
     private ArrayList<HashMap<String, String>> LIST;
     public void Database_Access(StringBuffer Query) {
-        DATABASE.setting SETTING = new DATABASE.setting();
-        String[] Setting_DATAS = SETTING.getDATA();
         
         Connection connection = null;
         Statement statement = null;
@@ -21,8 +22,12 @@ public class Access {
         StringBuffer ERMSG = null;
         
         try{
-            Class.forName(Setting_DATAS[2]);
-            connection = DriverManager.getConnection(Setting_DATAS[3], Setting_DATAS[0], Setting_DATAS[1]);
+            Class.forName(list.get(0).get("Driver"));
+            connection = DriverManager.getConnection(
+                list.get(0).get("URL"),
+                list.get(0).get("USER"),
+                list.get(0).get("PASS")
+                );
             statement = connection.createStatement();
             resultSet = statement.executeQuery(Query.toString());
             ResultSetMetaData rsmd = resultSet.getMetaData();
