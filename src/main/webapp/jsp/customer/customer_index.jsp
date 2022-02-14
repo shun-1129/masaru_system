@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="DATABASE.Access"%>
 <%
+    Beans.PriceBean PB = new Beans.PriceBean();
+    ArrayList<HashMap<String, String>> list = PB.getDATA();
+    for(int i = 0; i < list.size(); i++) {
+        System.out.println(list.get(i).get("2"));
+    }
 /*
     DATABASE.Access DataBase_Access = new DATABASE.Access();
     String Query = "SELECT * FROM sex_tbl;";

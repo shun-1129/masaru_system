@@ -21,9 +21,8 @@ public class TEST extends HttpServlet {
         String Query = "SELECT * FROM price_tbl;";
         DB.Database_Access(Query);
         ArrayList<HashMap<String, String>> list = DB.getData();
-        for(int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i).get("1") + " : " + list.get(i).get("2"));
-        }
+        Beans.PriceBean PB = new Beans.PriceBean();
+        PB.setDATA(list);
         response.sendRedirect("/masaru_system/jsp/customer/customer_index.jsp");
     }
 }
