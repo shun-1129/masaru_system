@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<jsp:useBean id="PB" class="Beans.PriceBean"/>
 <%
-    Beans.PriceBean PB = new Beans.PriceBean();
     ArrayList<HashMap<String, String>> list = PB.getDATA();
-    for(int i = 0; i < list.size(); i++) {
-        System.out.println(list.get(i).get("2"));
-    }
+    System.out.println(list);
 /*
     DATABASE.Access DataBase_Access = new DATABASE.Access();
     String Query = "SELECT * FROM sex_tbl;";
