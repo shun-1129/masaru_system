@@ -1,6 +1,6 @@
 .vscode/
+*.css.map
 sql_file
-target
-src/main/java/Encryption_Decryption
-target/classes/Encryption_Decryption
 src/main/java/DATABASE/setting.java
+apache-tomcat-9.0.58/
+target/
